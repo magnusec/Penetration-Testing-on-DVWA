@@ -20,7 +20,7 @@ DVWA is an intentionally vulnerable web application designed for learning and pr
 | 3 | Stored Cross-Site Scripting (XSS) | Medium | Leads to persistent execution of malicious scripts, resulting in session hijacking and credential theft. | Sanitize user input and apply proper output encoding before rendering content. |
 | 4 | Reflected Cross-Site Scripting (XSS) | Medium | Allows execution of malicious scripts via crafted links, enabling phishing and session compromise. | Encode all reflected input and validate request parameters strictly. |
 | 5 | DOM-Based Cross-Site Scripting (XSS) | Medium | Causes client-side script execution, leading to browser-based session and data compromise. | Avoid unsafe JavaScript methods and sanitize input before DOM insertion. |
-| 6 | Cross-Site Request Forgery (CSRF) | Low–Medium | Forces authenticated users to perform unauthorized actions without their knowledge. | Implement anti-CSRF tokens and validate request origin and intent. |
+| 6 | Cross-Site Request Forgery (CSRF) | Low| Forces authenticated users to perform unauthorized actions without their knowledge. | Implement anti-CSRF tokens and validate request origin and intent. |
 
 
 ---
