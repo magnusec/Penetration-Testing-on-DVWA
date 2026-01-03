@@ -12,14 +12,17 @@ DVWA is an intentionally vulnerable web application designed for learning and pr
 
 ### 🔐 DVWA Vulnerabilities
 
-| # | Vulnerability | Affected URL | Severity | Description |
-|---|--------------|--------------|----------|-------------|
-| 1 | SQL Injection | /vulnerabilities/sqli/ | High | Allows attackers to manipulate backend SQL queries and extract sensitive database data. |
-| 2 | Blind SQL Injection | /vulnerabilities/sqli_blind/ | High | Data is inferred through server behavior and response timing without visible output. |
-| 3 | Stored Cross-Site Scripting (XSS) | /vulnerabilities/xss_stored/ | Medium | Malicious scripts are stored on the server and executed for all users accessing the page. |
-| 4 | Reflected Cross-Site Scripting (XSS) | /vulnerabilities/xss_reflected/ | Medium | Injected scripts are reflected in server responses and executed in the victim’s browser. |
-| 5 | DOM-Based Cross-Site Scripting (XSS) | /vulnerabilities/xss_d/ | Medium | Client-side JavaScript manipulation allows execution of malicious scripts in the DOM. |
-| 6 | Cross-Site Request Forgery (CSRF) | /vulnerabilities/csrf/ | Low–Medium | Forces authenticated users to perform unauthorized actions without their consent. |
+## 🔐 DVWA Vulnerabilities
+
+| # | Vulnerability | Severity | Impact  | Mitigation  |
+|---|--------------|----------|----------------|-------------------|
+| 1 | SQL Injection | High | Allows attackers to bypass authentication, extract sensitive database data, and manipulate backend records. | Use prepared statements, parameterized queries, and strict input validation. |
+| 2 | Blind SQL Injection | High | Enables silent extraction of sensitive database information through response timing without visible errors. | Implement secure query handling, parameterized queries, and monitor abnormal response delays. |
+| 3 | Stored Cross-Site Scripting (XSS) | Medium | Leads to persistent execution of malicious scripts, resulting in session hijacking and credential theft. | Sanitize user input and apply proper output encoding before rendering content. |
+| 4 | Reflected Cross-Site Scripting (XSS) | Medium | Allows execution of malicious scripts via crafted links, enabling phishing and session compromise. | Encode all reflected input and validate request parameters strictly. |
+| 5 | DOM-Based Cross-Site Scripting (XSS) | Medium | Causes client-side script execution, leading to browser-based session and data compromise. | Avoid unsafe JavaScript methods and sanitize input before DOM insertion. |
+| 6 | Cross-Site Request Forgery (CSRF) | Low–Medium | Forces authenticated users to perform unauthorized actions without their knowledge. | Implement anti-CSRF tokens and validate request origin and intent. |
+
 
 ---
 
