@@ -25,18 +25,18 @@ DVWA is an intentionally vulnerable web application designed for learning and pr
 
 ---
 
-## 📘 What’s Inside the Report?
+## What’s Inside the Report?
 
 The detailed **DVWA security assessment report** included in this repository covers:
 
-- ✅ Introduction & Executive Summary  
-- ✅ Testing Tools and Methodology  
-- ✅ Technical Breakdown of Each Vulnerability  
-- ✅ Proof of Concept (PoC) with Payloads  
-- ✅ Real-World Attacker Scenarios  
-- ✅ Risk Analysis & Impact Assessment  
-- ✅ Mitigation Strategies and Recommendations  
-- ✅ Conclusion and Security Takeaways  
+- Introduction & Executive Summary  
+- Testing Tools and Methodology  
+- Technical Explanation of Each Vulnerability  
+- Proof of Concept (PoC) and Exploitation Flow    
+- Risk Analysis & Impact
+- Mitigation Strategies and Recommendations
+- Real-World Scenarios  
+- Conclusion 
 
 ---
 
